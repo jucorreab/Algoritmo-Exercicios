@@ -1,9 +1,0 @@
-algoritmo exercício
-início
-	inteiro hora, minutos, segundos;
-	escreva ("Digite a hora");
-	leia (hora);
-	minutos = hora*60;
-	segundos = minutos*60
-	escreva (hora "hora possui: " minutos "minutos e" segundos "segundos");
-fim
