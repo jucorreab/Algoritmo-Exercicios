@@ -1,0 +1,181 @@
+1)
+
+#include<stdio.h>
+
+int main(){
+	printf("Hello World! \n");
+}
+
+2)
+
+#include<stdio.h>
+
+int main(){
+	printf("Caderno de poesias e um belo lugar. \n");
+	printf("Tantas coisas lindas que eu gostaria de falar. \n");
+	printf("Eu falo em forma de versos para todos poderem escutar. \n");
+	printf("Agora voce ja sabe por que os poetas passam os dias escrevendo em seus \n");
+	printf("cadernos de poesias. \n");
+}
+
+3)
+
+#include<stdio.h>
+
+int a=0;
+float b=0;
+double c=0;
+char d[1], e[50];
+
+int main(){
+
+printf("Por favor digite um numero inteiro: \n");
+scanf("%d", &a);
+printf("Por favor digite um numero real: \n");
+scanf("%f", &b);
+printf("Por favor digite um numero real maior: \n");
+scanf("%lf", &c);
+printf("Por favor digite a letra: \n");
+scanf("%s", &d);
+printf("Por favor digite a string: \n");
+scanf("%s", &e);
+
+printf("O numero inteiro e: %d\n o numero real e: %.2f\n o numero real maior e: %.2f\n", a, b, c);
+printf("a letra e: %s\n e a string e: %s", d, e);
+}
+
+4)
+
+#include<stdio.h>
+
+int main (){
+	
+	int A, B, X;
+	
+	printf("Digite o valor de A: \n");
+	scanf("%d", &A);
+	printf("Digite o valor de B: \n");
+	scanf("%d", &B);
+	
+	X = (A+B);
+	
+	printf("Valor de A =  %d, + Valor de B = %d, = Valor de X = %d", &A, &B, &X);
+}
+
+5)
+
+#include<stdio.h>
+
+int A, B, X;
+
+int main(){
+	
+	printf("digite o valor de A: \n");
+	scanf("%d", &A);
+	printf("Digite o valor de B: \n");
+	scanf("%d", &B);
+	
+	X = (A+B);
+	
+	printf("%d + %d = %d", A, B, X);
+}
+
+6)
+
+#include<stdio.h>
+
+int A=10, B=18, X; 
+
+int main(){
+	
+	printf("O valor de A: \n");
+	scanf("%d", &A);
+	printf("O valor de B: \n");
+	scanf("%d", &B);
+	
+	printf("O valor de A %d + o valor de B %d e igual a %d", A, B, X);
+	
+}
+
+7)
+
+#include<stdio.h>
+
+ int N1, N2, prod;
+ 
+ int main(){
+ 	
+ 	printf("Digite o numero 1: \n");
+ 	scanf("%d", &N1);
+ 	printf("Digite o numero 2: \n");
+ 	scanf("%d", &N2);
+ 	
+ 	prod = (N1+N2);
+ 	
+ 	printf("A soma entre %d e %d e igual a: %d\n", N1, N2, prod);
+ 	printf("Valor de prod = %d", prod);
+ 	}
+
+8)
+
+#include<stdio.h>
+
+int A, B, C, D, diferenca; 
+
+int main(){
+	
+	printf("Digite o numero A: \n");
+	scanf("%d", &A);
+	printf("Digite o numero B: \n");
+	scanf("%d", &B);
+	printf("Digite o numero C: \n");
+	scanf("%d", &C);
+	printf("Digite o numero D: \n");
+	scanf("%d", &D);
+	
+	diferenca = (( A * B) - (C * D));
+	
+	printf("Valor de A: %d * valor de B: %d - valor de C: %d * valor de D: %d\n", A, B, C, D);
+	printf("O valor de diferenca e: %d", diferenca);
+	
+}
+
+9)
+
+#include<stdio.h>
+
+char nome[80];
+double salarioFixo, valorVendas, salarioTotal;
+
+int main(){
+printf("Digite seu nome: \n");
+fgets(nome, 80, stdin);
+printf("Digite seu salario: \n");
+scanf("%f", &salarioFixo);
+printf("Total de vendas no mes em dinheiro: \n");
+scanf("%f", &valorVendas);
+
+salarioTotal = (valorVendas * 0.15) + salarioFixo;
+
+printf("O salario total que voce vai receber e: R$%.2f", salarioTotal);
+
+}
+
+10)
+
+#include<stdio.h>
+#include<math.h>
+
+float x1, x2, y1, y2, distancia;
+
+int main(){
+
+printf("Digite o x1 e o y1: \n");
+scanf("%f%f", &x1, %y1);
+printf("Digite o x2 e o y2: \n");
+scanf("%f%f", &x2, &y2);
+
+distancia = sqrt(pow(x2 - x1, 2)+(pow(y2 - y1, 2)));
+
+printf("A distancia entre p1 e p2 e de: %.4f", distancia);
+}
