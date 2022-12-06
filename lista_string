@@ -1,0 +1,108 @@
+1)
+
+#include<stdio.h>
+#include<string.h>
+
+int main (){
+     int quantidade;
+     char nome[1000];
+    printf("Qual o nome:");
+    fgets(nome,1000,stdin);
+    quantidade = strlen(nome);
+    printf("Total:%d",strlen(nome));
+    printf("Apenas Letras %d",quantidade-1);
+}
+
+2)
+
+#include<stdio.h>
+#include<strig.h>
+
+int main (){
+    char cor[8];
+    printf("Me fale o nome de uma cor (branco, verde e amarelo.):");
+    scanf("%s",cor);
+    if (strcmp(cor,"branco")==0 ||strcmp(cor,"verde")==0 || strcmp(cor,"amarelo")==0 )
+    {
+        printf ("Cor %s validada",cor);
+    }else{
+        printf("Cor invalida");
+    }
+
+3)
+
+#include<stdio.h>
+#include<string.h>
+
+int main (){
+    char nome[100] , email[100] , endereco[100];
+    char nomeB[100] , emailB[100] , enderecoB[100];
+    
+    printf("Nome: ");
+    fflush(stdin);
+    fgets(nome,100,stdin);
+    
+    printf("email: ");
+    fflush(stdin);
+    fgets(email,100,stdin);
+    
+    printf("endereco: ");
+    fflush(stdin);
+    fgets(endereco,100,stdin);
+    
+    strcpy(nomeB,nome);
+	strcpy(emailB,email);
+	strcpy(enderecoB,endereco);
+    printf("Backup feito com sucesso\n");
+        
+}
+
+4)
+
+#include<stdio.h>
+#include<string.h>
+
+int main (){
+    char nomeIncio[100],nomeMeio[50],nomeFim[50];
+    printf("Me forneça o primeiro nome");
+    fflush(stdin);
+    gets(nomeIncio);
+    printf("Me forneça o primeiro nome");
+    fflush(stdin);
+    fgets(nomeMeio,50,stdin);
+    printf("Me forneça o primeiro nome");
+    fflush(stdin);
+    scanf("%s",&nomeFim);
+    strcat(nomeIncio,strcat(nomeMeio,nomeFim));
+    printf("%s",nomeIncio);
+}
+
+5)
+
+#include<stdio.h>
+#include<stdio.h>
+
+int main (){
+    int i;
+    char nome[1000],sobrenome[50],cpf[11],cpff[3];
+
+    printf("Nome: ");
+    fflush(stdin);
+    scanf("%s",&nome);
+
+    printf("Sobrenome: ");
+    fflush(stdin);
+    scanf("%s",&sobrenome);
+
+    printf("Cpf: ");
+    fflush(stdin);
+    scanf("%s",&cpf);
+
+    strncat(nome,sobrenome,1);
+    strncat(nome,cpf,3);
+
+
+     
+    printf("%s", nome);
+   
+}
