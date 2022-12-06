@@ -1,0 +1,144 @@
+1)
+
+#include<stdio.h>
+
+int hora, minuto, segundo;
+
+int main(){
+	
+	printf("Por favor, informe a hora: \n");
+	scanf("%d", &hora);
+	
+	minuto = hora*60;
+	segundo = hora*3600;
+	
+	printf("Sao %d horas %d minutos e %d segundos", hora, minuto, segundo);
+}
+
+2)
+
+#include<stdio.h>
+#include<math.h>
+
+float raio, area;
+
+int main(){
+	printf("Digite o raio da circunferencia: \n");
+	scanf("%f", &raio);
+	
+	area = 3.14*(raio*raio);
+	
+	printf("A area da circunferencia e = %.2f", area);
+}
+
+3)
+
+#include<stdio.h>
+
+float raio, area;
+
+int main(){
+	printf("Digite o raio da circunferencia: \n");
+	scanf("%f", &raio);
+	
+	area = 3.14*(raio*raio);
+	
+	printf("A area da circunferencia e = %.2f", area);
+}
+
+4)
+– Lembre-se das expressões aritméticas:
+1. mod ? m mod i: resto da divisão de m por i
+2. (\) ? m \ i: quociente da divisão de m por i
+Exemplo: 5 mod 2 é 1
+5 \ 2 é 2
+
+#include<stdio.h>
+
+int main(){
+    int num[1],resto,quociente,i;
+    for ( i = 0; i < 2; i++)
+    {
+        printf("Por gentileza me forneça os numero %d : ",i+1);
+        scanf ("%d",&num[i]);
+    }
+    
+    resto= num[0]%num[1];
+    quociente= num[0]/num[1];
+    printf("O resto e = %.1d , e o quociente e = %d",resto,quociente);
+}
+
+5)
+
+#include<stdio.h>
+
+int main (){
+	
+    int metros,mAvulsos, nRolos;
+    
+    printf("Quantos metros?");
+    scanf("%d",&metros); //150 
+    
+    nRolos = metros / 50;
+    mAvulsos = metros % 50;
+    
+    printf(" Rolos %d com %d metros avulsos ", nRolos, mAvulsos );
+    
+}
+
+6)
+
+#include<stdio.h>
+
+int main(){
+    int a , b , media;
+    int peso1 = 3.5;
+    int peso2 = 7.5;
+    printf("Forneça a nota 1 do Aluno:");
+    scanf("%d",&a);
+    printf("Forneça a nota 2 do Aluno:");
+    scanf("%d",&b);
+    if(a >= 10){
+            a =10;
+        }else if(a <=0 ){
+            a =0;
+    }
+    if(b >= 10){
+            b =10;
+        }else if(b <=0 ){
+            b =0;
+    }
+    media = (a *peso1)+(b*peso2)/(peso1+peso2);
+    if(media >= 10){
+        printf("Media = 10");
+    }else if(media <=0){
+        printf("Media = 0");
+    }else{
+        printf("Media = %d", media);
+    }
+}
+
+7)
+
+#include<stdio.h>
+
+int main(){
+    int matricula,horas;
+    float valor , salario;
+    char nome ,sexo;
+    printf("A baixo responda com as informaçoes do funcionario\n");
+    printf("Nome :");
+    scanf("%c",&nome);
+    printf("Sexo :");
+    scanf("%c",&sexo);
+    printf("Matricula :");
+    scanf("%d",&matricula);
+    printf("Horas trabalhadas :");
+    scanf("%d",&horas);
+    printf("valor trabalhadas :");
+    scanf("%.2f",&valor);
+    salario = (salario*horas)*30;
+    printf("Nome:%c\nSexo:%c\n Matricula:%d\n Horas Trabalhadas:%d\n Valor por hora:%f\n Salario:%f",nome,sexo,matricula,horas,valor,salario);
+}
+
+
